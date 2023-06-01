@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/showCurrenciesButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/button_background_color"
+        android:drawableEnd="@drawable/baseline_arrow_downward_24"
+        android:text="@string/showCurrenciesButtonText"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/currencyNameTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dateInfoTextView" />
+
+    <TextView
+        android:id="@+id/currencyNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/date_info_text_color"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/rootHolderLinearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/showCurrenciesButton" />
+
+    <LinearLayout
+        android:id="@+id/rootHolderLinearLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/currencyNameTextView">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="3dp"
+            android:layout_marginStart="3dp">
+
+            <TextView
+                android:id="@+id/forexBuyingTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="@string/forex_buying_text"
+                android:textColor="@color/currency_text_color"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/forexSellingTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="@string/forex_selling_text"
+                android:textColor="@color/currency_text_color"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/bankNoteBuyingTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="@string/banknote_buying_text"
+                android:textColor="@color/currency_text_color"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/bankNoteSellingTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="@string/bank_note_selling_text"
+                android:textColor="@color/currency_text_color"
+                android:textSize="25sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="3dp">
+
+            <TextView
+                android:id="@+id/forexBuyingValueTextView"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/fake_text"
+                android:textColor="@color/currency_values_test_color"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/forexSellingValueTextView"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/fake_text"
+                android:textColor="@color/currency_values_test_color"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/bankNoteBuyingValueTextView"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/fake_text"
+                android:textColor="@color/currency_values_test_color"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/bankNoteSellingValueTextView"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/fake_text"
+                android:textColor="@color/currency_values_test_color"
+                android:textSize="25sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/dateInfoTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/fake_text"
+        android:textColor="@color/date_info_text_color"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

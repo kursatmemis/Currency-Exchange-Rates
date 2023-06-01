@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Kur Takibi</string>
+    <string name="showCurrenciesButtonText">Doviz Kuru Seçiniz</string>
+    <string name="forex_buying_text">Doviz Alış: </string>
+    <string name="forex_selling_text">Doviz Satış: </string>
+    <string name="banknote_buying_text">Banka Alış: </string>
+    <string name="bank_note_selling_text">Banka Satış: </string>
+    <string name="fake_text">---</string>
+    <string name="date_info_text">Belirlenen Gösterge Niteliğindeki Türkiye Cumhuriyet Merkez Bankası Kurları</string>
+    <string name="toast_message">Internet bağlantısı probleminden dolayı veriler elde edilemedi. Uygulama otomatik kapatılacak. Lütfen tekrar deneyin.</string>
+</resources>
